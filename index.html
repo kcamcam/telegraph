@@ -23,10 +23,16 @@
   </head>
   <body>
     <!-- Container -->
-    <div class="container section grey-text text-darken-3">
+    <div class="container grey-text text-darken-3">
       <!-- Row -->
       <div class="row">
+
         <h1 class="center-align" id="raleway">Telegraph</h1>
+      </div>
+      <!-- End Row -->
+
+      <!-- Row -->
+      <div class="row">
         <div class="col offset-s1 s2">
           <table>
             <tr>
@@ -236,8 +242,12 @@
           <h3 id="input">.... . .-.. .-.. --- / .-- --- .-. .-.. -..</h3>
         </div>
         <div class="col s12 m10 offset-m1">
-          <p class="col lg-6">Click Anywhere on the screen and start typing.</p>
-          <p class="col lg-6">Space for "-", Period for ".", and / for "space".</p>
+          <div class="col s12 m2">
+            <a class="btn-floating btn-large waves-effect waves-light amber darken-2" id="morseButon">
+              <i class="material-icons">track_changes</i>
+            </a><br/>
+          </div>
+          <p class="col s12 m10">Short press for ".", long press (>= .5 sec) for "-", and pause (>= 5 sec) for a space.</p>
         </div>
       </div>
       <div class="row" id="raleway">
@@ -264,8 +274,10 @@
 
     <!-- Import jQuery -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <!-- Import Custom Script -->
+    <!-- Import Materialize Script -->
     <script type="text/javascript" src="js/materialize.js"></script>
+    <!-- Import Pressure.JS Script -->
+  	<script type="text/javascript" src="js/pressure.js"></script>
   	<!-- Import Custom Script -->
   	<script type="text/javascript" src="js/script.js"></script>
   </body>
